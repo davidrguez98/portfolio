@@ -7,52 +7,160 @@
 
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/root.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <script defer type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/js/bootstrap.bundle.min.js"></script>
+        
 </head>
 <body>
-    <header>
+    <!-- <header>
         <nav>Sobre mí</nav>
-        <nav>Tecnologías</nav>
+        <nav>Tecnologías</nav> https://www.flaticon.es/resultados?word=html5
         <nav>Proyectos</nav>
         <nav>Contacto</nav>
+    </header> -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-center gap-5" id="navbarNav">
+                <ul class="navbar-nav gap-3 align-items-center">
+                <!-- Enlaces principales -->
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#aboutMe">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#myStack">Tecnologías</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Contacto</a>
+                </li>
+                </ul>
+                <ul class="navbar-nav align-items-center"">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">ES</a>
+                    <ul class="dropdown-menu text-center">
+                        <li><a class="dropdown-item" href="#" id="lang-es">ES</a></li>
+                        <li><a class="dropdown-item" href="#" id="lang-en">EN</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
     </header>
 
+
     <main>
-        <section class="myself">
-            <div class="myself-1">
-                <img src="" alt="">
-                <h1>¡Hey, soy David!</h1>
-            </div>
-            <div class="myself-2">
-                <h2>Sobre mí</h2>
-                <p>Desde pequeño me ha encantado la tecnología, me pasaba el día leyendo sobre nuevos móviles, ordenadores y cualquier gadget que saliera. Siempre quería saber cómo funcionaban y qué los hacía diferentes.
-                <br><br>
-                Esa curiosidad me ha acompañado hasta hoy. Después de varios años como técnico de equipos médicos, decidí dar el salto a la programación. Ahora me estoy formando como desarrollador full stack, aprendiendo a crear proyectos reales que resuelven problemas reales.
-                <br><br>
-                La diferencia es que ahora no solo entiendo la tecnología, también la creo.</p>
-            </div>
-        </section>
-        <section class="myStack">
-            <h2>Tecnologías</h2>
-            <div class="myStack-list">
-                <span class="myStack-list-item">
-                    <img src="" alt="">
-                    <p>Python</p>
-                </span>
-                <span class="myStack-list-item">
-                    <img src="" alt="">
-                    <p>JavaScript</p>
-                </span>
-                <span class="myStack-list-item">
-                    <img src="" alt="">
-                    <p>HTML</p>
-                </span>
-                <span class="myStack-list-item">
-                    <img src="" alt="">
-                    <p>CSS</p>
-                </span>
+
+        <section style="padding-top: 8rem;" id="aboutMe">
+            <div class="container d-flex flex-column flex-lg-row align-items-center">
+                <div class="col-lg-6">
+                    <h5 class="fw-bold fs-3" style="color: black;">Sobre mí</h5>
+                    <p class="mt-3" style="color: black">
+                        Desde pequeño me ha fascinado la tecnología. Me pasaba el día leyendo sobre nuevos móviles, ordenadores y cualquier gadget que saliera. Siempre quería entender cómo funcionaban y qué los hacía diferentes.
+                        <br><br>
+                        Esa curiosidad me ha acompañado hasta hoy. Tras varios años trabajando como técnico de equipos médicos, decidí dar el salto a la programación. Actualmente me estoy formando como desarrollador full stack, creando proyectos reales que resuelven problemas del mundo real.
+                        <br><br>
+                        La diferencia es que <strong>ahora no solo entiendo la tecnología, también la creo.</strong>
+                    </p>
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-3 mt-4 flex-wrap">
+                        <a href="https://www.linkedin.com/in/tuusuario"  target="_blank" class="btn btn-outline-light d-flex align-items-center gap-2"><i class="bi bi-linkedin"></i>LinkedIn</a>
+                        <a href="https://github.com/tuusuario" target="_blank" class="btn btn-outline-light d-flex align-items-center gap-2">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+                        <a href="mailto:tuemail@example.com" class="btn btn-outline-light d-flex align-items-center gap-2">
+                            <i class="bi bi-envelope-fill"></i> Email
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img src="./assets/images/myslef.JPEG" class="img-fluid rounded-circle" alt="Foto de perfil" style="max-width: 300px;">
+                    <h1 class="display-5 fw-bold">Hey, soy <span style="color: rgb(104, 149, 247)">David</span> !</h1>
+                </div>
             </div>
         </section>
-        <section class="myProjects">
+
+        <section style="padding-top: 4rem;" id="myStack">
+            <div class="container">
+                <h5 class="fw-bold fs-3 mb-4" style="color: black">Mis tecnologías</h5>
+                <div class="d-flex flex-wrap gap-3">
+                    <div class="tech-card">
+                        <img src="./assets/images/pithon-c.png" alt="Python" class="tech-icon">
+                        <p style="margin: 0; padding-top: 0.5rem;">Python</p>
+                    </div>
+                    <div class="tech-card">
+                        <img src="./assets/images/js-c.png" alt="JavaScript" class="tech-icon">
+                        <p style="margin: 0; padding-top: 0.5rem;">JavaScript</p>
+                    </div>
+                    <div class="tech-card">
+                        <img src="./assets/images/html5-c.png" alt="HTML" class="tech-icon">
+                        <p style="margin: 0; padding-top: 0.5rem;">HTML</p>
+                    </div>
+                    <div class="tech-card">
+                        <img src="./assets/images/css-c.png" alt="CSS" class="tech-icon">
+                        <p style="margin: 0; padding-top: 0.5rem;">CSS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding-top: 4rem;" id="myProjects">
+            <div class="container">
+                <h5 class="fw-bold fs-3 mb-4" style="color: black">Mis proyectos</h5>
+                <div class="d-flex flex-column align-items-center justify-content-center">
+
+
+                    <!-- Single project -->
+                    <div class="card mb-3" style="max-width: 80%; background-color: azure;">
+                        <div class="row g-0">
+                            <div class="col-md-4 p-2">
+                                <img src="./assets/images/projects/weather-web.jpg" class="img-fluid" style="border-radius: 3;" alt="project portrait">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="p-0" style="height: 100%;">
+                                    <div>
+                                        <div class="card-header border-bottom-0 p-0" style="background-color: transparent;">
+                                            <ul class="nav nav-tabs card-header-tabs px-3 p-2" id="myTab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="asd-tab" data-bs-toggle="tab" data-bs-target="#asd" type="button" role="tab" aria-controls="asd" aria-selected="true" style="background-color: transparent; border: 0.5; color: black;">Full stack</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="sd-tab" data-bs-toggle="tab" data-bs-target="#sd" type="button" role="tab" aria-controls="sd" aria-selected="false" style="background-color: transparent; border: 0.5; color: black;">Python</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="tab-content px-3 pb-3 ps-3" style="border: 0.5rem; color: black;">
+                                            <div class="tab-pane fade show active" id="asd" role="tabpanel" aria-labelledby="asd-tab">
+                                            <h5 class="card-title mt-3">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="sd" role="tabpanel" aria-labelledby="sd-tab">
+                                            <h5 class="card-title mt-3">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- <section class="myProjects">
             <h2>Proyectos</h2>
             <article class="myProjects-project">
                 <div class="myProjects-project-img">
@@ -61,7 +169,7 @@
                 <div class="myProjects-project-inf">
                     <h3>Título proyecto</h3>
                     <nav class="myProjects-project-options">
-                        <button>Full Stack</button> <!-- Añadir cursor: pointer -->
+                        <button>Full Stack</button> 
                         <button>Back-end</button>
                     </nav>
                     <section class="myProjects-project-option-fullStack">
@@ -73,19 +181,23 @@
                     <section class="myProjects-project-option-backend">
                         <p>Descripción</p>
                         <ul>
-                            <li>Stack</li>
+                            <li>Stack Python</li>
                         </ul>
                     </section>
                 </div>
             </article>
-        </section>
-        <section class="myContact">
+        </section> -->
+        
+        <!-- <section class="myContact">
             <h2>Contacto</h2>
             <span>ropeda98@gmail.com</span>
             <span>CV</span>
             <span>GitHub</span>
             <span>Linkedink</span>
-        </section>
+        </section> -->
+        
+
+        
     </main>
 
     <footer>

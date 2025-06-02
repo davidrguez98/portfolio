@@ -1,0 +1,56 @@
+body {
+    
+    background-color: rgb(199, 203, 209) !important;
+    height: 100vh;
+}
+main {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+    .btn-outline-light {
+        border: 1px solid #ffffff44;
+        transition: all 0.3s ease;
+    }
+
+    .btn-outline-light:hover {
+        background-color: #ffffff22;
+        border-color: white;
+    }
+
+    .tech-card {
+        width: 100px;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+        }
+
+        .tech-card:hover {
+        background: linear-gradient(135deg, rgba(104, 149, 247, 0.2), rgba(255, 255, 255, 0.15));
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .tech-card p {
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: black;
+        line-height: 1;
+        }
+
+        .tech-icon {
+        width: 36px;
+        height: 36px;
+        object-fit: contain;
+        }
+}
