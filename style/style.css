@@ -5,7 +5,7 @@ body {
 }
 main {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,25 +32,32 @@ main {
         justify-content: center;
         align-items: center;
         transition: all 0.3s ease;
-        }
-
+        
         .tech-card:hover {
-        background: linear-gradient(135deg, rgba(104, 149, 247, 0.2), rgba(255, 255, 255, 0.15));
-        transform: translateY(-4px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(135deg, rgba(104, 149, 247, 0.2), rgba(255, 255, 255, 0.15));
+            transform: translateY(-4px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-
+        
         .tech-card p {
-        margin-top: 0.5rem;
-        font-size: 0.8rem;
-        font-weight: 500;
-        color: black;
-        line-height: 1;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: black;
+            line-height: 1;
         }
-
+        
         .tech-icon {
-        width: 36px;
-        height: 36px;
-        object-fit: contain;
+            width: 36px;
+            height: 36px;
+            object-fit: contain;
         }
+    }
+
+    .tech-card-project {
+        width: 1.5rem;
+    }
+
+    
+    
 }
