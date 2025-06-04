@@ -1,17 +1,18 @@
-body {
-    
-    background-color: var(--color-background) !important;
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+body {    
+    background: var(--color-background);
     height: 100vh;
     color: var(--color-text) !important;
 
-    .navbar {
-        background-color: var(--color-background-nav);
-
-        a {
+    .navbar a {
             color: var(--color-text) !important;
+            font-size: 16px;
         }
-    }
 }
+
 main {
     width: 100%;
     max-width: 1200px;
@@ -20,8 +21,13 @@ main {
     justify-content: center;
     margin: 0 auto;
 
-    #aboutMe, #myStack, #myProjects, #contact {
-        scroll-margin-top: 40px;
+    p {
+        font-size: 18px;
+    }
+
+    #home {
+        display: flex;
+        justify-content: center;
     }
 
     .btn-outline-light {
@@ -60,7 +66,7 @@ main {
             object-fit: contain;
         }
     }
-    
+
     .tech-card:hover {
             background-color: #ffffff22;
             border-color: white;

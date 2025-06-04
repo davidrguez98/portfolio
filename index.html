@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <script defer type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/js/bootstrap.bundle.min.js"></script>
         
 </head>
@@ -23,8 +27,14 @@
             <div class="collapse navbar-collapse justify-content-center gap-5" id="navbarNav">
                 <ul class="navbar-nav gap-3 align-items-center">
                 <!-- Enlaces principales -->
+                 <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
+                </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#aboutMe">Sobre mí</a>
+                    <a class="nav-link active" aria-current="page" href="#aboutMe-Contact">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#aboutMe-Contact">Contacto</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="#myStack">Tecnologías</a>
@@ -32,19 +42,6 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="#myProjects">Proyectos</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#contact">Contacto</a>
-                </li>
-                </ul>
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">ES</a>
-                    <ul class="dropdown-menu text-center">
-                        <li><a class="dropdown-item" href="#" id="lang-es">ES</a></li>
-                        <li><a class="dropdown-item" href="#" id="lang-en">EN</a></li>
-                    </ul>
-                </li>
-                </ul>
             </div>
             </div>
         </nav>
@@ -53,11 +50,31 @@
 
     <main>
 
-        <section style="padding-top: 6rem;" id="aboutMe">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <h5 class="fw-bold fs-3">Sobre mí</h5>
+        <section id="home">
+                <div class="d-flex justify-content-center align-items-center gap-2" style="height: 100vh; width: 70%;">
+                        <div>
+                            <h1 class="display-5  fw-bold mb-1">Hola, soy <span style="color: var(--color-remark);">David</span> !</h1>
+                            <h5 class="mb-4">Desarrollador <span style="color: #7eb2ee;">FullStack</span></h5>
+                            <h4>Programador buscavidas con +1 año de experiencia autodidacta mientras curso un Bootcamp FullStack de desarrollo de páginas web</h4>
+                            <div class="d-flex justify-content-lg-start gap-3 mt-4 flex-wrap">
+                                <a href="https://www.linkedin.com/in/tuusuario" target="_blank" class="btn btn-outline-light d-flex align-items-center gap-2"><i class="bi bi-linkedin"></i>LinkedIn</a>
+                                <a href="https://github.com/tuusuario" target="_blank" class="btn btn-outline-light d-flex align-items-center gap-2"><i class="bi bi-github"></i> GitHub</a>
+                                <a href="mailto:tuemail@example.com" class="btn btn-outline-light d-flex align-items-center gap-2"><i class="bi bi-envelope-fill"></i> Email</a>
+                                <a href="./assets/files/cv-david-rodriguez.pdf" download class="btn btn-outline-light d-flex align-items-center px-2">
+                                    <i class="bi bi-file-earmark-arrow-down-fill me-1"></i>CV
+                                </a>
+                            </div>
+                        </div>
+                        <img src="./assets/images/myslef.JPEG" class="img-fluid rounded-circle mb-4" alt="Foto de perfil" style="max-width: 300px;">                    
+                </div>
+        </section>
+
+        <div id="aboutMe-Contact" class="d-flex" style="width: 100%; padding-top: 3.5rem;">
+
+            <section style="width: 60%;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <h3 class="fw-bold">Sobre mí</h3>
                         <p class="mt-3">
                             Desde pequeño me ha fascinado la tecnología. Me pasaba el día leyendo sobre nuevos móviles, ordenadores y cualquier gadget que saliera. Siempre quería entender cómo funcionaban y qué los hacía diferentes.
                             <br><br>
@@ -65,54 +82,73 @@
                             <br><br>
                             La diferencia es que <strong style="color: var(--color-remark);">ahora no solo entiendo la tecnología, también la creo.</strong>
                         </p>
-                        <div class="d-flex justify-content-center justify-content-lg-start gap-3 mt-4 flex-wrap">
-                            <a href="https://www.linkedin.com/in/tuusuario" target="_blank" class="btn btn-outline-light d-flex align-items-center gap-2"><i class="bi bi-linkedin"></i>LinkedIn</a>
-                            <a href="https://github.com/tuusuario" target="_blank" class="btn btn-outline-light d-flex align-items-center gap-2"><i class="bi bi-github"></i> GitHub</a>
-                            <a href="mailto:tuemail@example.com" class="btn btn-outline-light d-flex align-items-center gap-2"><i class="bi bi-envelope-fill"></i> Email</a>
+                    </div>
+                </div>
+            </section>
+
+            <section style="width: 40%;">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="row align-items-center">
+                            <h3 class="fw-bold">Contacto</h3>
+                            <p class="mt-3">
+                                Si quieres ponerte en contacto conmigo, aquí tienes mis enlaces directos. Ya sea para colaborar, contratarme o simplemente charlar sobre tecnología, estaré encantado de responderte.
+                            </p>
+                            <div class="d-flex flex-wrap align-items-center gap-3 mt-3">
+                                <button id="copyEmailBtn" class="btn btn-outline-light d-flex align-items-center px-2">
+                                    ropeda98@gmail.com
+                                </button>
+                                <a href="./assets/cv-david-rodriguez.pdf" download class="btn btn-outline-light d-flex align-items-center px-2">
+                                    <i class="bi bi-file-earmark-arrow-down-fill me-1"></i>CV
+                                </a>
+                                <a href="https://github.com/tuusuario" target="_blank" class="btn btn-outline-light d-flex align-items-center px-2">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/tuusuario" target="_blank" class="btn btn-outline-light d-flex align-items-center px-2">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 text-center">
-                        <img src="./assets/images/myslef.JPEG" class="img-fluid rounded-circle" alt="Foto de perfil" style="max-width: 300px;">
-                        <h1 class="display-5 fw-bold">Hey, soy <span style="color: var(--color-remark);">David</span> !</h1>
+                </div>
+            </section>
+
+        </div>
+
+        <section id="myStack" style="padding-top: 3rem;" >
+                <div class="container">
+                    <h3 class="fw-bold mb-4">Mis tecnologías</h3>
+                    <div class="d-flex flex-wrap gap-3">
+                        <div class="tech-card">
+                            <img src="./assets/images/pithon-c.png" alt="Python" class="tech-icon">
+                            <p style="margin: 0; padding-top: 0.5rem;">Python</p>
+                        </div>
+                        <div class="tech-card">
+                            <img src="./assets/images/js-c.png" alt="JavaScript" class="tech-icon">
+                            <p style="margin: 0; padding-top: 0.5rem;">JavaScript</p>
+                        </div>
+                        <div class="tech-card">
+                            <img src="./assets/images/html5-c.png" alt="HTML" class="tech-icon">
+                            <p style="margin: 0; padding-top: 0.5rem;">HTML</p>
+                        </div>
+                        <div class="tech-card">
+                            <img src="./assets/images/css-c.png" alt="CSS" class="tech-icon">
+                            <p style="margin: 0; padding-top: 0.5rem;">CSS</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section style="padding-top: 2rem;" id="myStack">
+        <section style="padding: 3rem 0; " id="myProjects">
             <div class="container">
-                <h5 class="fw-bold fs-3 mb-4">Mis tecnologías</h5>
-                <div class="d-flex flex-wrap gap-3">
-                    <div class="tech-card">
-                        <img src="./assets/images/pithon-c.png" alt="Python" class="tech-icon">
-                        <p style="margin: 0; padding-top: 0.5rem;">Python</p>
-                    </div>
-                    <div class="tech-card">
-                        <img src="./assets/images/js-c.png" alt="JavaScript" class="tech-icon">
-                        <p style="margin: 0; padding-top: 0.5rem;">JavaScript</p>
-                    </div>
-                    <div class="tech-card">
-                        <img src="./assets/images/html5-c.png" alt="HTML" class="tech-icon">
-                        <p style="margin: 0; padding-top: 0.5rem;">HTML</p>
-                    </div>
-                    <div class="tech-card">
-                        <img src="./assets/images/css-c.png" alt="CSS" class="tech-icon">
-                        <p style="margin: 0; padding-top: 0.5rem;">CSS</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section style="padding-top: 2rem;" id="myProjects">
-            <div class="container">
-                <h5 class="fw-bold fs-3 mb-4">Mis proyectos</h5>
+                <h3 class="fw-bold mb-4">Mis proyectos</h3>
                 <div class="d-flex flex-column align-items-center justify-content-center">
 
-                    <div class="card mb-3" style=" width: 90%;">
+                    <div class="card mb-3" style=" width: 100%;">
                         <div class="row g-5 p-2">
                         <div class="col-md-4">
                             <a href="https://github.com/davidrguez98/Neoland-Proyecto-Lista-Compra" target="_blank">
-                            <img src="./assets/images/projects/home_display.png" class="img-fluid" style="border-radius: 3; max-width: 350px;" alt="project portrait">
+                            <img src="./assets/images/projects/home_display.png" class="img-fluid" style="border-radius: 3; max-width: 400px;" alt="project portrait">
                             </a>
                         </div>
                         <div class="col-md-8 d-flex flex-column justify-content-between">
@@ -142,11 +178,11 @@
                         </div>
                     </div>
 
-                    <div class="card mb-3" style=" width: 90%;">
+                    <div class="card mb-3" style=" width: 100%;">
                         <div class="row g-5 p-2">
                         <div class="col-md-4">
                             <a href="https://github.com/davidrguez98/weather-web" target="_blank">
-                            <img src="./assets/images/projects/bigsize-1.png" class="img-fluid" style="border-radius: 3; max-width: 350px;" alt="project portrait">
+                            <img src="./assets/images/projects/bigsize-1.png" class="img-fluid" style="border-radius: 3; max-width: 400px;" alt="project portrait">
                             </a>
                         </div>
                         <div class="col-md-8 d-flex flex-column justify-content-between">
@@ -186,11 +222,11 @@
                         </div>
                     </div>
 
-                    <div class="card mb-3" style=" width: 90%;">
+                    <div class="card mb-3" style=" width: 100%;">
                         <div class="row g-5 p-2">
                         <div class="col-md-4">
                             <a href="https://github.com/davidrguez98/to-do-web" target="_blank">
-                            <img src="./assets/images/projects/yt.png" class="img-fluid" style="border-radius: 3; max-width: 350px;" alt="project portrait">
+                            <img src="./assets/images/projects/yt.png" class="img-fluid" style="border-radius: 3; max-width: 400px;" alt="project portrait">
                             </a>
                         </div>
                         <div class="col-md-8 d-flex flex-column justify-content-between">
@@ -218,11 +254,11 @@
                         </div>
                     </div>
 
-                    <div class="card mb-3" style="width: 90%;">
+                    <div class="card mb-3" style="width: 100%;">
                         <div class="row g-5 p-2">
                         <div class="col-md-4">
                             <a href="https://github.com/davidrguez98/to-do-web" target="_blank">
-                            <img src="./assets/images/projects/todo.jpg" class="img-fluid" style="border-radius: 3; max-width: 350px;" alt="project portrait">
+                            <img src="./assets/images/projects/todo.jpg" class="img-fluid" style="border-radius: 3; max-width: 400px;" alt="project portrait">
                             </a>
                         </div>
                         <div class="col-md-8 d-flex flex-column justify-content-between">
@@ -262,34 +298,6 @@
                         </div>
                     </div>
 
-                </div>
-            </div>
-        </section>
-
-
-        <section style="padding-top: 2rem;" id="contact">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="">
-                        <h5 class="fw-bold fs-3">Contacto</h5>
-                        <p class="mt-3">
-                            Si quieres ponerte en contacto conmigo, aquí tienes mis enlaces directos. Ya sea para colaborar, contratarme o simplemente charlar sobre tecnología, estaré encantado de responderte.
-                        </p>
-                        <div class="d-flex flex-wrap align-items-center gap-3 mt-3">
-                            <button id="copyEmailBtn" class="btn btn-outline-light d-flex align-items-center px-2">
-                                ropeda98@gmail.com
-                            </button>
-                            <a href="./assets/cv-david-rodriguez.pdf" download class="btn btn-outline-light d-flex align-items-center px-2">
-                                <i class="bi bi-file-earmark-arrow-down-fill me-1"></i>CV
-                            </a>
-                            <a href="https://github.com/tuusuario" target="_blank" class="btn btn-outline-light d-flex align-items-center px-2">
-                                <i class="bi bi-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/tuusuario" target="_blank" class="btn btn-outline-light d-flex align-items-center px-2">
-                                <i class="bi bi-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>

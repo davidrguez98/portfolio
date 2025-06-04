@@ -2,9 +2,8 @@
 
 /* ================ COLORES ================ */
 
-    --color-text: #FFF5E4;
-    --color-remark: #ffffff;
-    --color-background: #183B4E;
-    --color-background-nav: #0e2430;
+    --color-text: #dfeeff;
+    --color-remark: #fdde2d;
+    --color-background: #091933 radial-gradient(circle,rgba(12, 36, 71, 1) 0%, rgba(6, 8, 20, 1) 100%);
 
 }
