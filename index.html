@@ -16,14 +16,9 @@
         
 </head>
 <body>
-    <!-- <header>
-        <nav>Sobre mí</nav>
-        <nav>Tecnologías</nav> https://www.flaticon.es/resultados?word=html5
-        <nav>Proyectos</nav>
-        <nav>Contacto</nav>
-    </header> -->
+
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
             <div class="collapse navbar-collapse justify-content-center gap-5" id="navbarNav">
                 <ul class="navbar-nav gap-3 align-items-center">
@@ -41,7 +36,7 @@
                     <a class="nav-link active" href="#contact">Contacto</a>
                 </li>
                 </ul>
-                <ul class="navbar-nav align-items-center"">
+                <ul class="navbar-nav align-items-center">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">ES</a>
                     <ul class="dropdown-menu text-center">
@@ -62,13 +57,13 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <h5 class="fw-bold fs-3" style="color: black;">Sobre mí</h5>
-                        <p class="mt-3" style="color: black">
+                        <h5 class="fw-bold fs-3">Sobre mí</h5>
+                        <p class="mt-3">
                             Desde pequeño me ha fascinado la tecnología. Me pasaba el día leyendo sobre nuevos móviles, ordenadores y cualquier gadget que saliera. Siempre quería entender cómo funcionaban y qué los hacía diferentes.
                             <br><br>
                             Esa curiosidad me ha acompañado hasta hoy. Tras varios años trabajando como técnico de equipos médicos, decidí dar el salto a la programación. Actualmente me estoy formando como desarrollador full stack, creando proyectos reales que resuelven problemas del mundo real.
                             <br><br>
-                            La diferencia es que <strong>ahora no solo entiendo la tecnología, también la creo.</strong>
+                            La diferencia es que <strong style="color: var(--color-remark);">ahora no solo entiendo la tecnología, también la creo.</strong>
                         </p>
                         <div class="d-flex justify-content-center justify-content-lg-start gap-3 mt-4 flex-wrap">
                             <a href="https://www.linkedin.com/in/tuusuario" target="_blank" class="btn btn-outline-light d-flex align-items-center gap-2"><i class="bi bi-linkedin"></i>LinkedIn</a>
@@ -78,7 +73,7 @@
                     </div>
                     <div class="col-lg-6 text-center">
                         <img src="./assets/images/myslef.JPEG" class="img-fluid rounded-circle" alt="Foto de perfil" style="max-width: 300px;">
-                        <h1 class="display-5 fw-bold">Hey, soy <span style="color: rgb(104, 149, 247)">David</span> !</h1>
+                        <h1 class="display-5 fw-bold">Hey, soy <span style="color: var(--color-remark);">David</span> !</h1>
                     </div>
                 </div>
             </div>
@@ -86,7 +81,7 @@
 
         <section style="padding-top: 2rem;" id="myStack">
             <div class="container">
-                <h5 class="fw-bold fs-3 mb-4" style="color: black">Mis tecnologías</h5>
+                <h5 class="fw-bold fs-3 mb-4">Mis tecnologías</h5>
                 <div class="d-flex flex-wrap gap-3">
                     <div class="tech-card">
                         <img src="./assets/images/pithon-c.png" alt="Python" class="tech-icon">
@@ -110,62 +105,174 @@
 
         <section style="padding-top: 2rem;" id="myProjects">
             <div class="container">
-                <h5 class="fw-bold fs-3 mb-4" style="color: black">Mis proyectos</h5>
+                <h5 class="fw-bold fs-3 mb-4">Mis proyectos</h5>
                 <div class="d-flex flex-column align-items-center justify-content-center">
 
-
-                    <!-- Single project -->
-                    <div class="card mb-3" style="background-color: transparent; width: 90%;">
-                        <div class="row g-0">
-                            <div class="col-md-4 p-2">
-                                <img src="./assets/images/projects/weather-web.jpg" class="img-fluid" style="border-radius: 3; max-width: 300px;" alt="project portrait">
+                    <div class="card mb-3" style=" width: 90%;">
+                        <div class="row g-5 p-2">
+                        <div class="col-md-4">
+                            <a href="https://github.com/davidrguez98/Neoland-Proyecto-Lista-Compra" target="_blank">
+                            <img src="./assets/images/projects/home_display.png" class="img-fluid" style="border-radius: 3; max-width: 350px;" alt="project portrait">
+                            </a>
+                        </div>
+                        <div class="col-md-8 d-flex flex-column justify-content-between">
+                            <div class="p-0" style="height: 100%;">
+                            <div>
+                                <div class="card-header border-bottom-0 p-0">
+                                <ul class="nav nav-tabs card-header-tabs px-3 " id="myTab-one" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="fullStack-tab-one" data-bs-toggle="tab" data-bs-target="#fullStack-one" type="button" role="tab" aria-controls="fullStack-one" aria-selected="true" style=" color: black;">Full stack</button>
+                                    </li>
+                                </ul>
+                                </div>
+                                <div class="tab-content px-3 pb-0 ps-3">
+                                <div class="tab-pane fade show active" id="fullStack-one" role="tabpanel" aria-labelledby="fullStack-tab-one">
+                                    <h5 class="card-title mt-3">Coffee Store Web App</h5>
+                                    <p class="card-text">Aplicación web para gestionar una tienda de café con carrito de compras y gestión de inventario. Todo funciona en el navegador usando HTML, CSS y JavaScript con LocalStorage.</p>
+                                    <div class="tech-card-project d-flex gap-3">
+                                    <img src="./assets/images/js-c.png" alt="JavaScript" class="tech-icon">
+                                    <img src="./assets/images/html5-c.png" alt="HTML" class="tech-icon">
+                                    <img src="./assets/images/css-c.png" alt="CSS" class="tech-icon">
+                                    </div>
+                                </div>
+                                </div>
                             </div>
-                            <div class="col-md-8">
-                                <div class="p-0" style="height: 100%;">
-                                    <div>
-                                        <div class="card-header border-bottom-0 p-0" style="background-color: transparent;">
-                                            <ul class="nav nav-tabs card-header-tabs px-3 p-2" id="myTab" role="tablist">
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link active" id="fullStack-tab" data-bs-toggle="tab" data-bs-target="#fullStack" type="button" role="tab" aria-controls="fullStack" aria-selected="true" style="background-color: transparent; color: black;">Full stack</button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link" id="python-tab" data-bs-toggle="tab" data-bs-target="#python" type="button" role="tab" aria-controls="python" aria-selected="false" style="background-color: transparent; color: black;">Python</button>
-                                                </li>
-                                            </ul>
-                                        </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
 
-                                        <div class="tab-content px-3 pb-3 ps-3">
-                                            <div class="tab-pane fade show active" id="fullStack" role="tabpanel" aria-labelledby="fullStack-tab">
-                                                <h5 class="card-title mt-3">Card title</h5>
-                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                                <div class="tech-card-project d-flex gap-3" >
-                                                    <img src="./assets/images/js-c.png" alt="JavaScript" class="tech-icon">
-                                                    <img src="./assets/images/html5-c.png" alt="HTML" class="tech-icon">
-                                                    <img src="./assets/images/css-c.png" alt="CSS" class="tech-icon">
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="python" role="tabpanel" aria-labelledby="python-tab">
-                                                <h5 class="card-title mt-3">Card title</h5>
-                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="card mb-3" style=" width: 90%;">
+                        <div class="row g-5 p-2">
+                        <div class="col-md-4">
+                            <a href="https://github.com/davidrguez98/weather-web" target="_blank">
+                            <img src="./assets/images/projects/bigsize-1.png" class="img-fluid" style="border-radius: 3; max-width: 350px;" alt="project portrait">
+                            </a>
+                        </div>
+                        <div class="col-md-8 d-flex flex-column justify-content-between">
+                            <div class="p-0" style="height: 100%;">
+                            <div>
+                                <div class="card-header border-bottom-0 p-0">
+                                <ul class="nav nav-tabs card-header-tabs px-3 " id="myTab-two" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="fullStack-tab-two" data-bs-toggle="tab" data-bs-target="#fullStack-two" type="button" role="tab" aria-controls="fullStack-two" aria-selected="true" style=" color: black;">Full stack</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="backEnd-tab-two" data-bs-toggle="tab" data-bs-target="#backEnd-two" type="button" role="tab" aria-controls="backEnd-two" aria-selected="false" style=" color: black;">Back-End</button>
+                                    </li>
+                                </ul>
+                                </div>
+                                <div class="tab-content px-3 pb-0 ps-3">
+                                <div class="tab-pane fade show active" id="fullStack-two" role="tabpanel" aria-labelledby="fullStack-tab-two">
+                                    <h5 class="card-title mt-3">WeatherApp</h5>
+                                    <p class="card-text">WeatherApp es una aplicación web que muestra información detallada del clima para cualquier ciudad del mundo durante los próximos 7 días. Muestra condiciones como temperatura, humedad, probabilidad de lluvia, salida y puesta de sol, ¡con un diseño limpio y responsive!</p>
+                                    <div class="tech-card-project d-flex gap-3">
+                                    <img src="./assets/images/js-c.png" alt="JavaScript" class="tech-icon">
+                                    <img src="./assets/images/html5-c.png" alt="HTML" class="tech-icon">
+                                    <img src="./assets/images/css-c.png" alt="CSS" class="tech-icon">
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="backEnd-two" role="tabpanel" aria-labelledby="backEnd-tab-two">
+                                    <h5 class="card-title mt-3">Weather Console App</h5>
+                                    <p class="card-text">Aplicación de consola desarrollada en Python que permite consultar la previsión meteorológica de una ciudad durante un rango de días. Se conecta a la API de Visual Crossing y devuelve un informe detallado del tiempo, incluyendo temperatura media, máximas, mínimas y probabilidad de precipitaciones.</p>
+                                    <div class="tech-card-project d-flex gap-3">
+                                    <img src="./assets/images/pithon-c.png" alt="Python" class="tech-icon">
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3" style=" width: 90%;">
+                        <div class="row g-5 p-2">
+                        <div class="col-md-4">
+                            <a href="https://github.com/davidrguez98/to-do-web" target="_blank">
+                            <img src="./assets/images/projects/yt.png" class="img-fluid" style="border-radius: 3; max-width: 350px;" alt="project portrait">
+                            </a>
+                        </div>
+                        <div class="col-md-8 d-flex flex-column justify-content-between">
+                            <div class="p-0" style="height: 100%;">
+                                <div>
+                                    <div class="card-header border-bottom-0 p-0">
+                                        <ul class="nav nav-tabs card-header-tabs px-3 " id="myTab-three" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="backEnd-tab-three" data-bs-toggle="tab" data-bs-target="#backEnd-three" type="button" role="tab" aria-controls="backEnd-three" aria-selected="true" style=" color: black;">Back-End</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content px-3 pb-0 ps-3">
+                                        <div class="tab-pane fade show active" id="backEnd-three" role="tabpanel" aria-labelledby="backEnd-tab-three">
+                                            <h5 class="card-title mt-3">Automatizador de Shorts de YouTube</h5>
+                                            <p class="card-text">Este proyecto genera vídeos tipo Short de YouTube de forma automatizada, combinando clips de vídeo, audios y subtítulos. Además, recopila noticias actuales desde NewsAPI para crear contenido diario basado en temas tecnológicos, económicos, salud, ciencia, deportes y políticos.</p>
+                                            <div class="tech-card-project d-flex gap-3">
+                                                <img src="./assets/images/pithon-c.png" alt="Python" class="tech-icon">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        </div>
                     </div>
-                    
-                    
+
+                    <div class="card mb-3" style="width: 90%;">
+                        <div class="row g-5 p-2">
+                        <div class="col-md-4">
+                            <a href="https://github.com/davidrguez98/to-do-web" target="_blank">
+                            <img src="./assets/images/projects/todo.jpg" class="img-fluid" style="border-radius: 3; max-width: 350px;" alt="project portrait">
+                            </a>
+                        </div>
+                        <div class="col-md-8 d-flex flex-column justify-content-between">
+                            <div class="p-0" style="height: 100%;">
+                            <div>
+                                <div class="card-header border-bottom-0 p-0" style="background-color: transparent;">
+                                <ul class="nav nav-tabs card-header-tabs px-3 " id="myTab-four" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="fullStack-tab-four" data-bs-toggle="tab" data-bs-target="#fullStack-four" type="button" role="tab" aria-controls="fullStack-four" aria-selected="true" style="color: black;">Full stack</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="backEnd-tab-four" data-bs-toggle="tab" data-bs-target="#backEnd-four" type="button" role="tab" aria-controls="backEnd-four" aria-selected="false" style="color: black;">Back-End</button>
+                                    </li>
+                                </ul>
+                                </div>
+                                <div class="tab-content px-3 pb-0 ps-3">
+                                <div class="tab-pane fade show active" id="fullStack-four" role="tabpanel" aria-labelledby="fullStack-tab-four">
+                                    <h5 class="card-title mt-3">To-Do Web App</h5>
+                                    <p class="card-text">Este proyecto es una aplicación web de lista de tareas (To-Do List), desarrollada como práctica de HTML, CSS y JavaScript puro. Permite añadir, editar, marcar como realizadas y visualizar tareas con una interfaz limpia y responsive.</p>
+                                    <div class="tech-card-project d-flex gap-3">
+                                    <img src="./assets/images/js-c.png" alt="JavaScript" class="tech-icon">
+                                    <img src="./assets/images/html5-c.png" alt="HTML" class="tech-icon">
+                                    <img src="./assets/images/css-c.png" alt="CSS" class="tech-icon">
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="backEnd-four" role="tabpanel" aria-labelledby="backEnd-tab-four">
+                                    <h5 class="card-title mt-3">To-Do</h5>
+                                    <p class="card-text">Aplicación de consola en Python que permite crear, listar, modificar, marcar como completadas y eliminar tareas. Las tareas se almacenan de forma persistente en un archivo JSON local. Es un proyecto ideal para practicar estructuras de control, manejo de archivos, clases y persistencia de datos sin base de datos.</p>
+                                    <div class="tech-card-project d-flex gap-3">
+                                    <img src="./assets/images/pithon-c.png" alt="Python" class="tech-icon">
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
+
 
         <section style="padding-top: 2rem;" id="contact">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="">
-                        <h5 class="fw-bold fs-3" style="color: black;">Contacto</h5>
-                        <p class="mt-3" style="color: black;">
+                        <h5 class="fw-bold fs-3">Contacto</h5>
+                        <p class="mt-3">
                             Si quieres ponerte en contacto conmigo, aquí tienes mis enlaces directos. Ya sea para colaborar, contratarme o simplemente charlar sobre tecnología, estaré encantado de responderte.
                         </p>
                         <div class="d-flex flex-wrap align-items-center gap-3 mt-3">
