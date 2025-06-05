@@ -51,26 +51,38 @@
 
     <main>
 
-        <section id="home">
-                <div class="d-flex justify-content-center align-items-center gap-2" style="height: 100vh; width: 70%;">
-                        <div>
-                            <h1 class="display-5  fw-bold mb-1">Hola, soy <span style="color: var(--color-remark);">David</span> !</h1>
-                            <h5 class="mb-4">Desarrollador <span style="color: #7eb2ee;">FullStack</span></h5>
-                            <h4>Programador buscavidas con +1 año de experiencia autodidacta mientras curso un Bootcamp FullStack de desarrollo de páginas web</h4>
-                            <div class="d-flex justify-content-lg-start gap-3 mt-4 flex-wrap">
-                                <a href="https://www.linkedin.com/in/david-rodr%C3%ADguez-p%C3%A9rez-softdev/" target="_blank" class="btn btn-outline-light d-flex align-items-center gap-2"><i class="bi bi-linkedin"></i>LinkedIn</a>
-                                <a href="https://github.com/davidrguez98" target="_blank" class="btn btn-outline-light d-flex align-items-center gap-2"><i class="bi bi-github"></i> GitHub</a>
-                                <a href="mailto:tuemail@example.com" class="btn btn-outline-light d-flex align-items-center gap-2"><i class="bi bi-envelope-fill"></i> Email</a>
-                                <a href="./assets/files/cv-david-rodriguez.pdf" download class="btn btn-outline-light d-flex align-items-center px-2">
-                                    <i class="bi bi-file-earmark-arrow-down-fill me-1"></i>CV
-                                </a>
-                            </div>
-                        </div>
-                        <img src="./assets/images/portrait/myslef.JPEG" class="img-fluid rounded-circle mb-4" alt="Foto de perfil" style="max-width: 300px;">                    
+        <section id="home" class="py-5 d-flex align-items-center mx-auto" style="min-height: 100vh; width: 70%;">
+            <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center gap-4">
+                <div class="order-1 order-md-2">
+                    <img src="./assets/images/portrait/myslef.JPEG" class="img-fluid rounded-circle" alt="Foto de perfil" style="max-width: 300px;">
                 </div>
+                <div class="text-center text-md-start order-2 order-md-1">
+                    <h1 class="display-5 fw-bold mb-1">
+                        Hola, soy <span style="color: var(--color-remark);">David</span> !
+                    </h1>
+                    <h5 class="mb-4">Desarrollador <span style="color: #7eb2ee;">FullStack</span></h5>
+                    <h4>
+                        Programador buscavidas con +1 año de experiencia autodidacta mientras curso un Bootcamp FullStack de desarrollo de páginas web
+                    </h4>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-4 flex-wrap">
+                        <a href="https://www.linkedin.com/in/david-rodr%C3%ADguez-p%C3%A9rez-softdev/" target="_blank" class="btn btn-outline-light d-flex align-items-center gap-2">
+                            <i class="bi bi-linkedin"></i>LinkedIn
+                        </a>
+                        <a href="https://github.com/davidrguez98" target="_blank" class="btn btn-outline-light d-flex align-items-center gap-2">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+                        <a href="mailto:tuemail@example.com" class="btn btn-outline-light d-flex align-items-center gap-2">
+                            <i class="bi bi-envelope-fill"></i> Email
+                        </a>
+                        <a href="./assets/files/cv-david-rodriguez.pdf" download class="btn btn-outline-light d-flex align-items-center px-2">
+                            <i class="bi bi-file-earmark-arrow-down-fill me-1"></i>CV
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="aboutMe" style="padding: 4rem 0;">
+        <section id="aboutMe" style="padding: 4rem 0 0 0;">
             <div class="container">
                 <div class="row align-items-center">
                     <h3 class="fw-bold">Sobre mí</h3>
@@ -85,13 +97,13 @@
             </div>
         </section>
 
-        <section id="myStack" style="padding-top: 4rem;">
+        <section id="myStack" style="padding: 4rem 0 0 0;">
 
             <div class="container" style="width: 100%;">
                 <h3 class="fw-bold mb-4">Mis tecnologías y skills</h3>
-                <div class="d-flex justify-content-center gap-3">
+                <div class="stack-container d-flex justify-content-center gap-3">
 
-                    <div class="container-tech-card d-flex flex-column gap-3 p-3" style="width: 30%;">
+                    <div class="container-tech-card d-flex flex-column gap-3 p-3" ">
                         <div>
                             <h4>Back-End</h4>
                             <div class="row pt-3 g-2">
@@ -140,7 +152,7 @@
                         </div>
                     </div>
 
-                    <div class="container-tech-card d-flex flex-column gap-3 p-3" style="width: 30%;">
+                    <div class="container-tech-card d-flex flex-column gap-3 p-3">
                         <div>
                             <h4>Front-End</h4>
                             <div class="row pt-3 g-2">
@@ -184,7 +196,7 @@
                         </div>
                     </div>
 
-                    <div class="container-tech-card d-flex flex-column gap-3 p-3" style="width: 30%;">
+                    <div class="container-tech-card d-flex flex-column gap-3 p-3">
                         <div>
                             <h4>Skills</h4>
                             <div class="row pt-3 g-2">
@@ -200,9 +212,9 @@
                 </div>
             </div>
 
-        </section>           
+        </section>
 
-        <section id="myProjects" style="padding: 4rem 0; width: 100%;" >
+        <section id="myProjects" style="padding: 4rem 0 0 0; width: 100%;" >
             <div class="container">
                 <h3 class="fw-bold mb-4">Mis proyectos</h3>
                 <div class="d-flex flex-column align-items-center justify-content-center">
@@ -357,9 +369,9 @@
             </div>
         </section>
 
-        <section id="contact" style="padding: 4rem 0;">
+        <section id="contact" style="padding: 4rem 0 0 0;">
             <div class="container">
-                <div class="row justify-content-center">
+                <div class="row">
                     <div class="row align-items-center">
                         <h3 class="fw-bold">Contacto</h3>
                         <p class="mt-3">

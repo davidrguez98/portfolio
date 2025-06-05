@@ -2,88 +2,116 @@ html {
     font-family: "Roboto", sans-serif;
 }
 
-body {    
-    background: var(--color-background);
-    height: 100vh;
-    color: var(--color-text) !important;
+@media (min-width: 769px) {
 
-    .navbar a {
-            color: var(--color-text) !important;
-            font-size: 16px;
-        }
-}
+    body {    
+        background: var(--color-background);
+        height: 100vh;
+        color: var(--color-text) !important;
 
-.navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.2) !important;
-    transition: background-color 0.3s ease;
-    backdrop-filter: blur(8px)
-}
-
-main {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-
-    p {
-        font-size: 18px;
+        .navbar a {
+                color: var(--color-text) !important;
+                font-size: 16px;
+            }
     }
 
-    #home {
+    .navbar.scrolled {
+        background-color: rgba(0, 0, 0, 0.2) !important;
+        transition: background-color 0.3s ease;
+        backdrop-filter: blur(8px)
+    }
+
+    main {
+        width: 100%;
+        max-width: 1200px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-    }
+        margin: 0 auto;
+
+        p {
+            font-size: 18px;
+        }
+
+        #home {
+            display: flex;
+            justify-content: center;
+        }
 
 
-    .btn-outline-light {
-        border: 1px solid #ffffff44;
-        transition: all 0.3s ease;
-    }
+        .btn-outline-light {
+            border: 1px solid #ffffff44;
+            transition: all 0.3s ease;
+        }
 
-    .btn-outline-light:hover {
-        background-color: #ffffff22;
-        border-color: white;
-        color: white;
-    }
+        .btn-outline-light:hover {
+            background-color: #ffffff22;
+            border-color: white;
+            color: white;
+        }
 
-    .container-tech-card {
-        
-        border: 2px solid rgba(255, 255, 255, 0.2);
-        border-radius: 12px;
-        
-        .tech-card {
-            width: 6em;
-            height: 6em;
+        .container-tech-card {
+            
+            border: 2px solid rgba(255, 255, 255, 0.2);
             border-radius: 12px;
+            width: 30%;
+            
+            .tech-card {
+                width: 6em;
+                height: 6em;
+                border-radius: 12px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.3s ease;
+                
+                .tech-card p {
+                    margin-top: 0.5rem;
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                    color: black;
+                    line-height: 1;
+                }
+                
+                .tech-icon {
+                    width: 2rem;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .tech-card-project {
+            width: 1.5rem;
+        }
+
+        #myProjects img {
+            border-radius: 3px;
+        }
+        
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        background: var(--color-background);
+        height: 100vh;
+        color: var(--color-text) !important;
+
+        .stack-container {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            transition: all 0.3s ease;
-            
-            .tech-card p {
-                margin-top: 0.5rem;
-                font-size: 0.8rem;
-                font-weight: 500;
-                color: black;
-                line-height: 1;
-            }
-            
-            .tech-icon {
-                width: 2rem;
-                object-fit: contain;
+            width: 100%;
+
+            .container-tech-card {
+                width: 100%;
+                border: 2px solid rgba(255, 255, 255, 0.2);
+                border-radius: 12px;
             }
         }
-    }
-
-    .tech-card-project {
-        width: 1.5rem;
-    }
-
-    #myProjects img {
-        border-radius: 3px;
     }
     
 }
