@@ -2,6 +2,21 @@ html {
     font-family: "Roboto", sans-serif;
 }
 
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    transition: background-color 0.3s ease;
+    backdrop-filter: blur(8px)
+}
+
+.navbar a {
+    color: var(--color-text) !important;
+    font-size: 16px;
+}
+
+.navbar-nav {
+    gap: 2rem;
+}
+
 @media (min-width: 769px) {
 
     body {    
@@ -9,17 +24,10 @@ html {
         height: 100vh;
         color: var(--color-text) !important;
 
-        .navbar a {
-                color: var(--color-text) !important;
-                font-size: 16px;
-            }
+        
     }
 
-    .navbar.scrolled {
-        background-color: rgba(0, 0, 0, 0.2) !important;
-        transition: background-color 0.3s ease;
-        backdrop-filter: blur(8px)
-    }
+    
 
     main {
         width: 100%;
@@ -111,7 +119,10 @@ html {
 
         section {
             padding-top: 2rem;
+        }
 
+        .navbar-nav {
+            gap: 1rem;
         }
 
         .stack-container {
