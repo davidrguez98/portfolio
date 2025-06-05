@@ -13,6 +13,12 @@ body {
         }
 }
 
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    transition: background-color 0.3s ease;
+    backdrop-filter: blur(8px)
+}
+
 main {
     width: 100%;
     max-width: 1200px;
@@ -30,6 +36,7 @@ main {
         justify-content: center;
     }
 
+
     .btn-outline-light {
         border: 1px solid #ffffff44;
         transition: all 0.3s ease;
@@ -41,37 +48,35 @@ main {
         color: white;
     }
 
-    .tech-card {
-        width: 100px;
-        height: 100px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
+    .container-tech-card {
+        
+        border: 2px solid rgba(255, 255, 255, 0.2);
         border-radius: 12px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: all 0.3s ease;
         
-        .tech-card p {
-            margin-top: 0.5rem;
-            font-size: 0.8rem;
-            font-weight: 500;
-            color: black;
-            line-height: 1;
-        }
-        
-        .tech-icon {
-            width: 36px;
-            height: 36px;
-            object-fit: contain;
+        .tech-card {
+            width: 6em;
+            height: 6em;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+            
+            .tech-card p {
+                margin-top: 0.5rem;
+                font-size: 0.8rem;
+                font-weight: 500;
+                color: black;
+                line-height: 1;
+            }
+            
+            .tech-icon {
+                width: 2rem;
+                object-fit: contain;
+            }
         }
     }
-
-    .tech-card:hover {
-            background-color: #ffffff22;
-            border-color: white;
-            color: white;
-        }
 
     .tech-card-project {
         width: 1.5rem;
