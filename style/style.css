@@ -38,6 +38,10 @@ html {
             justify-content: center;
         }
 
+        section {
+            padding-top: 4rem;
+        }
+
 
         .btn-outline-light {
             border: 1px solid #ffffff44;
@@ -66,17 +70,9 @@ html {
                 align-items: center;
                 transition: all 0.3s ease;
                 
-                .tech-card p {
-                    margin-top: 0.5rem;
-                    font-size: 0.8rem;
-                    font-weight: 500;
-                    color: black;
-                    line-height: 1;
-                }
                 
                 .tech-icon {
                     width: 2rem;
-                    object-fit: contain;
                 }
             }
         }
@@ -89,6 +85,18 @@ html {
             border-radius: 3px;
         }
         
+        .project-container-rest {
+            width: 60%;
+        }
+
+        .project-container-img {
+            width: 40%;
+        }
+
+        .contact-container {
+            gap: 1rem;
+            padding-bottom: 4rem;
+        }
     }
 }
 
@@ -101,16 +109,45 @@ html {
         height: 100vh;
         color: var(--color-text) !important;
 
+        section {
+            padding-top: 2rem;
+
+        }
+
         .stack-container {
             display: flex;
             flex-direction: column;
             width: 100%;
 
-            .container-tech-card {
-                width: 100%;
-                border: 2px solid rgba(255, 255, 255, 0.2);
-                border-radius: 12px;
-            }
+        }
+
+        .container-tech-card {
+            width: 100%;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+
+        }
+        .tech-icon {
+            width: 2rem;
+            object-fit: contain;
+        }
+
+        .stack-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-container-rest {
+            margin-top: 0;
+        }
+
+        .project-container-rest-descript {
+            padding: 1rem;
+        }
+
+        .contact-container {
+            gap: 0.5rem;
+            padding-bottom: 2rem;
         }
     }
     
