@@ -2,32 +2,136 @@ html {
     font-family: "Roboto", sans-serif;
 }
 
-.navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.2) !important;
-    transition: background-color 0.3s ease;
-    backdrop-filter: blur(8px)
-}
-
-.navbar a {
+.navbar-nav a {
     color: var(--color-text) !important;
     font-size: 16px;
 }
 
-.navbar-nav {
-    gap: 2rem;
+
+@media (max-width: 768px) {
+
+    .burgerMenu {
+        display: block;
+        background-color: transparent;
+        color: white;
+        border: none;
+        padding: 1rem 0 0 1rem;
+        width: 2.5rem;
+    }
+
+    header .navbar {
+        visibility: hidden;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        padding-top: 0;
+        background-color: rgba(0, 0, 0, 0.2) !important;
+        transition: background-color 0.3s ease;
+        backdrop-filter: blur(30px);
+    }
+
+    .navbar.visible {
+        visibility: visible;
+    }
+
+    #closeButton {
+        display: block;
+        align-self: flex-end;
+        margin: 1rem;
+        background: transparent;
+        border: none;
+        color: var(--color-text);
+        cursor: pointer;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        background: var(--color-background);
+        height: 100vh;
+        color: var(--color-text) !important;
+
+        section {
+            padding-top: 2rem;
+        }
+
+        .navbar-nav {
+            gap: 1rem;
+        }
+
+        .stack-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+        }
+
+        .container-tech-card {
+            width: 100%;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+
+        }
+        .tech-icon {
+            width: 2rem;
+            object-fit: contain;
+        }
+
+        .stack-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-container-rest {
+            margin-top: 0;
+        }
+
+        .project-container-rest-descript {
+            padding: 1rem;
+        }
+
+        .contact-container {
+            gap: 0.5rem;
+            padding-bottom: 2rem;
+        }
+    }
+    
 }
 
 @media (min-width: 769px) {
+
+    nav.scrolled {
+        background-color: rgba(0, 0, 0, 0.2) !important;
+        transition: background-color 0.3s ease;
+        backdrop-filter: blur(8px)
+    }
 
     body {    
         background: var(--color-background);
         height: 100vh;
         color: var(--color-text) !important;
-
-        
     }
 
-    
+    .burgerMenu, #closeButton {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        
+        .navbar-nav {
+            gap: 2rem;
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+            justify-content: center;
+        }
+    }
 
     main {
         width: 100%;
@@ -108,58 +212,3 @@ html {
     }
 }
 
-@media (max-width: 768px) {
-
-    body {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        background: var(--color-background);
-        height: 100vh;
-        color: var(--color-text) !important;
-
-        section {
-            padding-top: 2rem;
-        }
-
-        .navbar-nav {
-            gap: 1rem;
-        }
-
-        .stack-container {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-
-        }
-
-        .container-tech-card {
-            width: 100%;
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            border-radius: 12px;
-
-        }
-        .tech-icon {
-            width: 2rem;
-            object-fit: contain;
-        }
-
-        .stack-container {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .project-container-rest {
-            margin-top: 0;
-        }
-
-        .project-container-rest-descript {
-            padding: 1rem;
-        }
-
-        .contact-container {
-            gap: 0.5rem;
-            padding-bottom: 2rem;
-        }
-    }
-    
-}

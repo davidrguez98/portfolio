@@ -23,26 +23,16 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid justify-content-center">
-                <ul class="navbar-nav d-flex flex-row flex-wrapalign-items-center">
-                    <li class="nav-item">
-                    <a class="nav-link active" href="#home">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" href="#aboutMe">Sobre mí</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" href="#myStack">Tecnologías</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" href="#myProjects">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" href="#contact">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+        <button class="burgerMenu"><img src="./assets/icons/burger-bar.png" alt="boton hamburguesa"></i></button>
+        <nav id="nav" class="navbar navbar-expand-lg fixed-top">
+            <button id="closeButton"><i class="bi bi-x-lg"></i></button>
+            <ul class="navbar-nav d-flex flex-wrapalign-items-center">
+                <li class="nav-item"><a class="nav-link active" href="#home">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#aboutMe">Sobre mí</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#myStack">Tecnologías</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#myProjects">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#contact">Contacto</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -105,7 +95,7 @@
                     <div class="container-tech-card d-flex flex-column gap-3 p-3" ">
                         <div>
                             <h4>Back-End</h4>
-                            <div class="row pt-3 g-2">
+                            <div class="row pt-3 g-2"> <!-- Aqui me gustaria que sea columnas y si se pasa del tamaño que se vaya hacia abajo -->
                                 <div class="col-4">
                                     <div class="tech-card text-center">
                                         <img src="./assets/images/stack/python-c.png" alt="Python" class="tech-icon">
