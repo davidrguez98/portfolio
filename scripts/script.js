@@ -7,6 +7,13 @@ function main() {
     document.querySelectorAll("#copyEmailBtn").forEach(btn => {
         btn.addEventListener("click", function() {
             clipBoardCopy('ropeda98@gmail.com')
+            const originalText = btn.textContent
+
+            btn.textContent = "¡Copiado con éxito!"
+
+            setTimeout(() => {
+                btn.textContent = originalText
+            }, 2000)
         })
     })
 
