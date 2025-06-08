@@ -7,6 +7,12 @@ html {
     font-size: 16px;
 }
 
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(4rem, max-content));
+    gap: 1rem;
+    justify-content: start;
+}
 
 @media (max-width: 768px) {
 
@@ -76,10 +82,22 @@ html {
             border: 2px solid rgba(255, 255, 255, 0.2);
             border-radius: 12px;
 
-        }
-        .tech-icon {
-            width: 2rem;
-            object-fit: contain;
+            .tech-card {
+                width: 4rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                img {
+                    width: 80%;
+                }
+                p {
+                    font-size: 90%;
+                }
+               
+            }
+
         }
 
         .stack-container {
@@ -173,19 +191,19 @@ html {
             width: 30%;
             
             .tech-card {
-                width: 6em;
-                height: 6em;
-                border-radius: 12px;
+                width: 4rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                transition: all 0.3s ease;
                 
-                
-                .tech-icon {
-                    width: 2rem;
+                img {
+                    width: 80%;
                 }
+                p {
+                    font-size: 90%;
+                }
+               
             }
         }
 
@@ -210,5 +228,7 @@ html {
             padding-bottom: 4rem;
         }
     }
+    
 }
+
 
