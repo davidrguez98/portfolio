@@ -81,6 +81,9 @@ html {
             width: 100%;
             border: 2px solid rgba(255, 255, 255, 0.2);
             border-radius: 12px;
+            background-color: rgba(101, 101, 101, 0.1) !important;
+            backdrop-filter: blur(30px);
+            
 
             .tech-card {
                 width: 4rem;
@@ -100,13 +103,12 @@ html {
 
         }
 
-        .stack-container {
-            display: flex;
-            flex-direction: column;
-        }
-
         .project-container-rest {
             margin-top: 0;
+        }
+
+        .tech-card-project img{
+            width: 8%;
         }
 
         .project-container-rest-descript {
@@ -189,6 +191,8 @@ html {
             border: 2px solid rgba(255, 255, 255, 0.2);
             border-radius: 12px;
             width: 30%;
+            background-color: rgba(101, 101, 101, 0.1) !important;
+            backdrop-filter: blur(30px);
             
             .tech-card {
                 width: 4rem;
