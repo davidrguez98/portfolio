@@ -1,0 +1,52 @@
+//Copia en el portapapeles el correo
+export function clipBoardCopy(text) {
+    navigator.clipboard.writeText(text)
+}
+
+export function interactivClipBoardCopy() {
+    document.querySelectorAll("#copyEmailBtn").forEach(btn => {
+        btn.addEventListener("click", function() {
+            
+            const originalText = btn.textContent
+            clipBoardCopy('ropeda98@gmail.com')
+            btn.textContent = "¡Copiado con éxito!"
+
+            setTimeout(() => {
+                btn.textContent = originalText
+            }, 2000)
+        })
+    })
+}
+
+//Activa menú hamburguesa
+export function burgerNavActive() {
+    document.querySelector(".burgerMenu").addEventListener("click", () => {
+        document.querySelector("#nav").classList.add("visible")
+    })
+}
+
+
+//Desactiva menú hamburguesa
+export function burgerNavInactive() {
+    document.querySelector("#closeButton").addEventListener("click", () => {
+        document.querySelector("#nav").classList.remove("visible")
+    })
+
+    document.querySelectorAll(".nav-link").forEach(btn => {
+        btn.addEventListener("click", () => {
+            document.querySelector("#nav").classList.remove("visible")
+        })
+    })
+}
+
+//Nav interactiva cuando se hace scroll
+export function interactiveNav() {
+    window.addEventListener("scroll", function () {
+        const navbar = document.querySelector("nav");
+        if (window.scrollY > 10) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    })
+}
