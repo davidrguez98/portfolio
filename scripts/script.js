@@ -1,14 +1,13 @@
-import { burgerNavActive, burgerNavInactive, interactivClipBoardCopy, interactiveNav } from "./functions/functions.js"
+import { burgerNavActive, burgerNavInactive, interactiveClipBoardCopy, interactiveNav } from "./functions/functions.js"
 import { mainSection } from "./projects-html-scripts/projects-html-scripts.js"
 
 function main() {
     
-    interactivClipBoardCopy()
+    mainSection()        
+    interactiveClipBoardCopy()
     burgerNavActive()
     burgerNavInactive()
     interactiveNav()
-
-    mainSection()    
 
 }
 

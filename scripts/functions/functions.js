@@ -1,9 +1,9 @@
 //Copia en el portapapeles el correo
-export function clipBoardCopy(text) {
+function clipBoardCopy(text) {
     navigator.clipboard.writeText(text)
 }
 
-export function interactivClipBoardCopy() {
+export function interactiveClipBoardCopy() {
     document.querySelectorAll("#copyEmailBtn").forEach(btn => {
         btn.addEventListener("click", function() {
             
