@@ -272,7 +272,7 @@ function myProjectsFunction() {
                 <div class="card mb-3" style="width: 100%; background-color: rgba(101, 101, 101, 0.2) !important; backdrop-filter: blur(30px); color: var(--color-text);">
                     <div class="project-container row g-5 p-2 flex-column flex-md-row">
                         <div class="project-container-img col-md-4">
-                            <a href="https://github.com/davidrguez98/to-do-web"
+                            <a href="https://github.com/davidrguez98/ytshorts-generator"
                                 class="project-link"
                                 target="_blank"
                                 aria-label="Abrir repositorio en GitHub">
@@ -319,7 +319,7 @@ function myProjectsFunction() {
                 <div class="card mb-3" style="width: 100%; background-color: rgba(101, 101, 101, 0.2) !important; backdrop-filter: blur(30px); color: var(--color-text);">
                     <div class="project-container row g-5 p-2 flex-column flex-md-row">
                         <div class="project-container-img col-md-4">
-                            <a href="https://github.com/davidrguez98/ytshorts-generator"
+                            <a href="https://github.com/davidrguez98/to-do-web"
                                 class="project-link"
                                 target="_blank"
                                 aria-label="Abrir repositorio en GitHub">
