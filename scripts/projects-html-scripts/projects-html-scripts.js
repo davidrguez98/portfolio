@@ -110,7 +110,7 @@ function myStackFunction() {
                 <div class="container-tech-card d-flex flex-column gap-3 p-3">
                     <div>
                         <h4>Front-End</h4>
-                        <div class="tech-grid pt-3">
+                        <div class="tech-grid p-3">
                             <div class="tech-card text-center">
                                 <img src="./assets/images/stack/js-c.png" alt="JavaScript" class="tech-icon">
                                 <p class="m-0 pt-2">JavaScript</p>
