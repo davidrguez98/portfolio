@@ -219,6 +219,7 @@ function myProjectsFunction() {
                     <div class="project-container row g-5 p-2 flex-column flex-md-row">
                         <div class="project-container-img col-md-4">
                             <a href="https://github.com/davidrguez98/weather-web"
+                                id="projectLink-two"
                                 class="project-link"
                                 target="_blank"
                                 aria-label="Abrir repositorio en GitHub">
@@ -239,10 +240,10 @@ function myProjectsFunction() {
                                 <div class="card-header border-bottom-0 p-0">
                                     <ul class="nav nav-tabs card-header-tabs px-3" id="myTab-two" role="tablist">
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="fullStack-tab-two" data-bs-toggle="tab" data-bs-target="#fullStack-two" type="button" role="tab" aria-controls="fullStack-two" aria-selected="true" style="background-color: var(--color-background); color: var(--color-text); border: none">Full stack</button>
+                                            <button class="nav-link active" id="fullStack-tab-two" data-bs-toggle="tab" data-bs-target="#fullStack-two" type="button" role="tab" aria-controls="fullStack-two" aria-selected="true" data-href="https://github.com/davidrguez98/weather-web" style="background-color: var(--color-background); color: var(--color-text); border: none">Full stack</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="backEnd-tab-two" data-bs-toggle="tab" data-bs-target="#backEnd-two" type="button" role="tab" aria-controls="backEnd-two" aria-selected="false" style="background-color: var(--color-background); color: var(--color-text); border: none">Back-End</button>
+                                            <button class="nav-link" id="backEnd-tab-two" data-bs-toggle="tab" data-bs-target="#backEnd-two" type="button" role="tab" aria-controls="backEnd-two" aria-selected="false" data-href="https://github.com/davidrguez98/Weather-API" style="background-color: var(--color-background); color: var(--color-text); border: none">Back-End</button>
                                         </li>
                                     </ul>
                                 </div>
@@ -279,7 +280,7 @@ function myProjectsFunction() {
                                 <img src="./assets/images/projects/yt.png"
                                     class="img-fluid"
                                     style="border-radius: .25rem; width: 100%;"
-                                    alt="Captura To-Do Web App">
+                                    alt="Captura Automatizador de Shorts de YouTube">
 
                                 <span class="overlay" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" width="34" height="34">
@@ -320,6 +321,7 @@ function myProjectsFunction() {
                     <div class="project-container row g-5 p-2 flex-column flex-md-row">
                         <div class="project-container-img col-md-4">
                             <a href="https://github.com/davidrguez98/to-do-web"
+                                id="projectLink-four"
                                 class="project-link"
                                 target="_blank"
                                 aria-label="Abrir repositorio en GitHub">
@@ -346,10 +348,10 @@ function myProjectsFunction() {
                                 <div class="card-header border-bottom-0 p-0">
                                     <ul class="nav nav-tabs card-header-tabs px-3" id="myTab-four" role="tablist">
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="fullStack-tab-four" data-bs-toggle="tab" data-bs-target="#fullStack-four" type="button" role="tab" aria-controls="fullStack-four" aria-selected="true" style="background-color: var(--color-background); color: var(--color-text); border: none">Full stack</button>
+                                            <button class="nav-link active" id="fullStack-tab-four" data-bs-toggle="tab" data-bs-target="#fullStack-four" type="button" role="tab" aria-controls="fullStack-four" aria-selected="true" data-href="https://github.com/davidrguez98/to-do-web" style="background-color: var(--color-background); color: var(--color-text); border: none">Full stack</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="backEnd-tab-four" data-bs-toggle="tab" data-bs-target="#backEnd-four" type="button" role="tab" aria-controls="backEnd-four" aria-selected="false" style="background-color: var(--color-background); color: var(--color-text); border: none">Back-End</button>
+                                            <button class="nav-link" id="backEnd-tab-four" data-bs-toggle="tab" data-bs-target="#backEnd-four" type="button" role="tab" aria-controls="backEnd-four" aria-selected="false" data-href="https://github.com/davidrguez98/My_ToDo_app" style="background-color: var(--color-background); color: var(--color-text); border: none">Back-End</button>
                                         </li>
                                     </ul>
                                 </div>

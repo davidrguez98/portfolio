@@ -50,3 +50,35 @@ export function interactiveNav() {
         }
     })
 }
+
+export function changeLinkProject() {
+    const projectLinkTwo = document.querySelector('#projectLink-two')
+    const tabButtonFSTwo = document.querySelector('#myTab-two #fullStack-tab-two')
+    const tabButtonBETwo = document.querySelector('#myTab-two #backEnd-tab-two')
+
+    const projectLinkFour = document.querySelector('#projectLink-four')
+    const tabButtonFSFour = document.querySelector('#myTab-four #fullStack-tab-four')
+    const tabButtonBEFour = document.querySelector('#myTab-four #backEnd-tab-four')
+    
+
+    tabButtonBETwo.addEventListener("click", function() {
+        const newHref = tabButtonBETwo.getAttribute("data-href")
+        projectLinkTwo.setAttribute("href", newHref)
+    })
+    
+    tabButtonFSTwo.addEventListener("click", function() {
+        const newHref = tabButtonFSTwo.getAttribute("data-href")
+        projectLinkTwo.setAttribute("href", newHref)
+    })
+
+    tabButtonBEFour.addEventListener("click", function() {
+        const newHref = tabButtonBEFour.getAttribute("data-href")
+        projectLinkFour.setAttribute("href", newHref)
+    })
+    
+    tabButtonFSFour.addEventListener("click", function() {
+        const newHref = tabButtonFSFour.getAttribute("data-href")
+        projectLinkFour.setAttribute("href", newHref)
+    })
+
+}
