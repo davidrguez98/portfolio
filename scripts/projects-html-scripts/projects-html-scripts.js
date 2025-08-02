@@ -75,13 +75,6 @@ function myStackFunction() {
                                     <img src="./assets/images/stack/python-c.png" alt="Python" class="tech-icon">
                                     <p class="m-0 pt-1" style="font-size: 16px;">Python</p>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="border-top: 1px solid rgba(255, 255, 255, 0.2);">
-                        <h5 style="padding-top: 1rem;">Aprendiendo</h5>
-                        <div class="pt-3">
-                            <div class="tech-grid">
                                 <div class="tech-card text-center">
                                     <img src="./assets/images/stack/nodejs.png" alt="NodeJS" class="tech-icon">
                                     <p class="m-0 pt-2">NodeJS</p>
@@ -94,13 +87,24 @@ function myStackFunction() {
                                     <img src="./assets/images/stack/mongodb.png" alt="MongoDB" class="tech-icon">
                                     <p class="m-0 pt-2">MongoDB</p>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="border-top: 1px solid rgba(255, 255, 255, 0.2);">
+                        <h5 style="padding-top: 1rem;">Aprendiendo</h5>
+                        <div class="pt-3">
+                            <div class="tech-grid">
                                 <div class="tech-card text-center">
-                                    <img src="./assets/images/stack/socketio.png" alt="Socket.IO" class="tech-icon">
-                                    <p class="m-0 pt-2">Socket.IO</p>
+                                    <img src="./assets/images/stack/java.png" alt="Java" class="tech-icon">
+                                    <p class="m-0 pt-2">Java</p>
                                 </div>
                                 <div class="tech-card text-center">
                                     <img src="./assets/images/stack/sql.png" alt="SQL" class="tech-icon">
                                     <p class="m-0 pt-2">SQL</p>
+                                </div>
+                                <div class="tech-card text-center">
+                                    <img src="./assets/images/stack/socketio.png" alt="Socket.IO" class="tech-icon">
+                                    <p class="m-0 pt-2">Socket.IO</p>
                                 </div>
                             </div>
                         </div>
