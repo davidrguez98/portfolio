@@ -120,6 +120,10 @@ function myStackFunction() {
                                 <p class="m-0 pt-2">JavaScript</p>
                             </div>
                             <div class="tech-card text-center">
+                                <img src="./assets/images/stack/react.png" alt="ReactJS" class="tech-icon">
+                                <p class="m-0 pt-2">ReactJS</p>
+                            </div>
+                            <div class="tech-card text-center">
                                 <img src="./assets/images/stack/html5-c.png" alt="HTML" class="tech-icon">
                                 <p class="m-0 pt-2">HTML</p>
                             </div>
@@ -132,10 +136,6 @@ function myStackFunction() {
                     <div style="border-top: 1px solid rgba(255, 255, 255, 0.2);">
                         <h5 style="padding-top: 1rem;">Aprendiendo</h5>
                         <div class="tech-grid pt-3">
-                            <div class="tech-card text-center">
-                                <img src="./assets/images/stack/react.png" alt="ReactJS" class="tech-icon">
-                                <p class="m-0 pt-2">ReactJS</p>
-                            </div>
                             <div class="tech-card text-center">
                                 <img src="./assets/images/stack/angularjs.png" alt="Angular" class="tech-icon">
                                 <p class="m-0 pt-2">Angular</p>
