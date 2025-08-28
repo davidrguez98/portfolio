@@ -18,7 +18,7 @@ function homeFunction() {
                 </h1>
                 <h5 class="mb-4">Desarrollador <span style="color: #7eb2ee;">FullStack</span></h5>
                 <h4>
-                    Programador buscavidas con +1 año de experiencia autodidacta mientras curso un Bootcamp FullStack de desarrollo de páginas web
+                    Programador buscavidas con +1 año de experiencia autodidacta y formación FullStack completada en Bootcamp de desarrollo web.
                 </h4>
                 <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-4 flex-wrap">
                     <a href="https://www.linkedin.com/in/david-rodr%C3%ADguez-p%C3%A9rez-softdev/" target="_blank" class="btn btn-outline-light d-flex align-items-center gap-2">
