@@ -87,6 +87,10 @@ function myStackFunction() {
                                     <img src="./assets/images/stack/mongodb.png" alt="MongoDB" class="tech-icon">
                                     <p class="m-0 pt-2">MongoDB</p>
                                 </div>
+                                <div class="tech-card text-center">
+                                    <img src="./assets/images/stack/sql.png" alt="SQL" class="tech-icon">
+                                    <p class="m-0 pt-2">SQL</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -97,10 +101,6 @@ function myStackFunction() {
                                 <div class="tech-card text-center">
                                     <img src="./assets/images/stack/java.png" alt="Java" class="tech-icon">
                                     <p class="m-0 pt-2">Java</p>
-                                </div>
-                                <div class="tech-card text-center">
-                                    <img src="./assets/images/stack/sql.png" alt="SQL" class="tech-icon">
-                                    <p class="m-0 pt-2">SQL</p>
                                 </div>
                                 <div class="tech-card text-center">
                                     <img src="./assets/images/stack/socketio.png" alt="Socket.IO" class="tech-icon">
@@ -174,14 +174,14 @@ function myProjectsFunction() {
                 <div id="card" class="card mb-3" style="width: 100%; background-color: rgba(101, 101, 101, 0.2) !important; backdrop-filter: blur(30px); color: var(--color-text);">
                     <div class="project-container row g-5 p-2 flex-column flex-md-row">
                         <div class="project-container-img col-md-4">
-                            <a href="https://github.com/davidrguez98/Neoland-Proyecto-ReactJS"
+                            <a href="https://github.com/davidrguez98/Clinic-Data-Project?tab=readme-ov-file"
                                 class="project-link"
                                 target="_blank"
                                 aria-label="Abrir repositorio en GitHub">
-                                <img src="./assets/images/projects/home_display_react.png"
+                                <img src="./assets/images/projects/BBDD_dentalClinic.jpg"
                                     class="img-fluid"
                                     style="border-radius: .25rem; width: 100%;"
-                                    alt="Captura Coffee Store Web App">
+                                    alt="Captura Clinic data extractor">
                                 <span class="overlay" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" width="34" height="34">
                                     <path fill="currentColor"
@@ -197,17 +197,17 @@ function myProjectsFunction() {
                             <div class="project-container-rest-descript">
                                 <div class="card-header border-bottom-0 p-0">
                                     <ul class="nav nav-tabs card-header-tabs px-3" id="myTab-one" role="tablist">
-                                        <li class="nav-item" role="presentation"><button class="nav-link active" id="fullStack-tab-one" data-bs-toggle="tab" data-bs-target="#fullStack-one" type="button" role="tab" aria-controls="fullStack-one" aria-selected="true" style="background-color: var(--color-background); color: var(--color-text); border: none">Full stack</button></li>
+                                        <li class="nav-item" role="presentation"><button class="nav-link active" id="fullStack-tab-one" data-bs-toggle="tab" data-bs-target="#fullStack-one" type="button" role="tab" aria-controls="fullStack-one" aria-selected="true" style="background-color: var(--color-background); color: var(--color-text); border: none">Back-End</button></li>
                                     </ul>
                                 </div>
 
                                 <div class="tab-content px-3 pb-0 ps-3">
                                     <div class="tab-pane fade show active" id="fullStack-one" role="tabpanel" aria-labelledby="fullStack-tab-one">
-                                        <h5 class="card-title mt-3">Coffee Store Web App</h5>
-                                        <p class="card-text">Frontend desarrollado en React para la tienda online Coffee Shop. Proporciona una interfaz moderna, responsive y sencilla que permite explorar productos, gestionar un carrito y visualizar estadísticas en un dashboard.</p>
+                                        <h5 class="card-title mt-3">Clinic data extractor</h5>
+                                        <p class="card-text">Clinic Data Extractor es una herramienta diseñada para automatizar el flujo completo de extracción y gestión de datos clínicos. El proyecto implementa un proceso ETL que obtiene información desde una base de datos SQL, la procesa para dejarla en un formato coherente y estructurado, y finalmente la exporta a Google Firestore.</p>
                                         <div class="tech-card-project d-flex gap-3">
-                                            <img src="./assets/images/stack/react.png" alt="ReactJS" class="tech-icon">
-                                            <img src="./assets/images/stack/css-c.png" alt="CSS" class="tech-icon">
+                                            <img src="./assets/images/stack/python-c.png" alt="ReactJS" class="tech-icon">
+                                            <img src="./assets/images/stack/sql.png" alt="CSS" class="tech-icon">
                                         </div>
                                     </div>
                                 </div>
@@ -249,13 +249,58 @@ function myProjectsFunction() {
                                 <div class="tab-content px-3 pb-0 ps-3">
                                     <div class="tab-pane fade show active" id="fullStack-one" role="tabpanel" aria-labelledby="fullStack-tab-one">
                                         <h5 class="card-title mt-3">Coffee Store Web App</h5>
-                                        <p class="card-text">Servidor backend desarrollado en Node.js con Express y MongoDB para la gestión de usuarios, productos y compras. Utiliza arquitectura MVC, motor de vistas EJS y control de acceso mediante middlewares. Está diseñado para integrarse con un frontend o utilizarse directamente como base para un sistema de e-commerce o dashboard administrativo.</p>
+                                        <p class="card-text">Servidor backend desarrollado en Node.js con Express y MongoDB para la gestión de usuarios, productos y compras. Utiliza arquitectura MVC, motor de vistas EJS y control de acceso mediante middlewares. Está diseñado para integrarse con un frontend.</p>
                                         <div class="tech-card-project d-flex gap-3">
                                             <img src="./assets/images/stack/nodejs.png" alt="NodeJS" class="tech-icon">
                                             <img src="./assets/images/stack/expressjs.png" alt="ExpressJS" class="tech-icon">
                                             <img src="./assets/images/stack/mongodb.png" alt="MongoDB" class="tech-icon">
                                             <img src="./assets/images/stack/js-c.png" alt="JavaScript" class="tech-icon">
                                             <img src="./assets/images/stack/html5-c.png" alt="HTML" class="tech-icon">
+                                            <img src="./assets/images/stack/css-c.png" alt="CSS" class="tech-icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="card" class="card mb-3" style="width: 100%; background-color: rgba(101, 101, 101, 0.2) !important; backdrop-filter: blur(30px); color: var(--color-text);">
+                    <div class="project-container row g-5 p-2 flex-column flex-md-row">
+                        <div class="project-container-img col-md-4">
+                            <a href="https://github.com/davidrguez98/Neoland-Proyecto-ReactJS"
+                                class="project-link"
+                                target="_blank"
+                                aria-label="Abrir repositorio en GitHub">
+                                <img src="./assets/images/projects/home_display_react.png"
+                                    class="img-fluid"
+                                    style="border-radius: .25rem; width: 100%;"
+                                    alt="Captura Coffee Store Web App">
+                                <span class="overlay" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="34" height="34">
+                                    <path fill="currentColor"
+                                        d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5
+                                            5h6V3H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6h-2v6H5V5Z"/>
+                                </svg>
+                                <span class="overlay-text">Ver repositorio</span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="project-container-rest col-md-8 d-flex flex-column justify-content-between p-0 pe-3">
+                            <div class="project-container-rest-descript">
+                                <div class="card-header border-bottom-0 p-0">
+                                    <ul class="nav nav-tabs card-header-tabs px-3" id="myTab-one" role="tablist">
+                                        <li class="nav-item" role="presentation"><button class="nav-link active" id="fullStack-tab-one" data-bs-toggle="tab" data-bs-target="#fullStack-one" type="button" role="tab" aria-controls="fullStack-one" aria-selected="true" style="background-color: var(--color-background); color: var(--color-text); border: none">Front-End</button></li>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-content px-3 pb-0 ps-3">
+                                    <div class="tab-pane fade show active" id="fullStack-one" role="tabpanel" aria-labelledby="fullStack-tab-one">
+                                        <h5 class="card-title mt-3">Coffee Store Web App</h5>
+                                        <p class="card-text">Frontend desarrollado en React para la tienda online Coffee Shop. Proporciona una interfaz moderna, responsive y sencilla que permite explorar productos, gestionar un carrito y visualizar estadísticas en un dashboard.</p>
+                                        <div class="tech-card-project d-flex gap-3">
+                                            <img src="./assets/images/stack/react.png" alt="ReactJS" class="tech-icon">
                                             <img src="./assets/images/stack/css-c.png" alt="CSS" class="tech-icon">
                                         </div>
                                     </div>
