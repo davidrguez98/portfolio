@@ -18,7 +18,7 @@ function homeFunction() {
                 </h1>
                 <h5 class="mb-4">Desarrollador <span style="color: #7eb2ee;">FullStack</span></h5>
                 <h4>
-                    Programador buscavidas con +1 año de experiencia autodidacta y formación FullStack completada en Bootcamp de desarrollo web.
+                    Programador en constante evolución, con más de 1 año de experiencia práctica en entornos reales y formación especializada.
                 </h4>
                 <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-4 flex-wrap">
                     <a href="https://www.linkedin.com/in/david-rodr%C3%ADguez-p%C3%A9rez-softdev/" target="_blank" class="btn btn-outline-light d-flex align-items-center gap-2">
@@ -49,10 +49,35 @@ function aboutMeFunction() {
                 <p class="mt-3">
                     Desde pequeño me ha fascinado la tecnología. Me pasaba el día leyendo sobre nuevos móviles, ordenadores y cualquier gadget que saliera. Siempre quería entender cómo funcionaban y qué los hacía diferentes.
                     <br><br>
-                    Esa curiosidad me ha acompañado hasta hoy. Tras varios años trabajando como técnico de equipos médicos, decidí dar el salto a la programación. Actualmente me estoy formando como desarrollador full stack, creando proyectos reales que resuelven problemas del mundo real.
+                    Esa curiosidad me ha acompañado hasta hoy. Tras varios años trabajando como técnico de equipos médicos, decidí dar el salto a la programación. Actualmente estoy trabajando como desarrollador FullStack en una startup de arte.
                     <br><br>
                     La diferencia es que <strong style="color: var(--color-remark);">ahora no solo entiendo la tecnología, también la creo.</strong>
                 </p>
+            </div>
+        </div>
+    `
+}
+
+function myExperienceFunction() {
+
+    aboutMe.innerHTML = 
+    `
+        <div class="container">
+            <div class="row align-items-center">
+                <h3 class="fw-bold">Mi experiencia</h3>
+                <h4 class="mt-3" style="color: var(--color-remark);">Everlasting Art</h4>
+                <div class ="ml-3 experience-details">
+                    <h6>Desarrollador FullStack</h6>
+                    <p class="mt-3 pr-3 experience-text">
+                        Trabajo como desarrollador Full Stack con Laravel, MySQL, React y Nextjs, participando en el desarrollo activo de nuevas funcionalidades, resolución de bugs y mejora continua del código existente.
+                        <br><br>
+                        Desarrollo y conecto endpoints, base de datos y frontend, gestionando peticiones a la API, consultas a BBDD y flujos de autenticación entre cliente y servidor.
+                        <br><br>
+                        Trabajo en equipo con otros desarrolladores utilizando Git y validando cada funcionalidad mediante pruebas manuales, debugging y tests automáticos en entornos de desarrollo y staging.
+                        <br><br>
+                        Mi trabajo me permite intervenir en todo el ciclo de la aplicación, desde la lógica de backend hasta la interacción en el frontend, participando también en decisiones técnicas dentro del proyecto.
+                    </p>
+                </div>
             </div>
         </div>
     `
@@ -78,6 +103,10 @@ function myStackFunction() {
                                 <div class="tech-card text-center">
                                     <img src="./assets/images/stack/nodejs.png" alt="NodeJS" class="tech-icon">
                                     <p class="m-0 pt-2">NodeJS</p>
+                                </div>
+                                <div class="tech-card text-center">
+                                    <img src="./assets/images/stack/PHP.png" alt="PHP" class="tech-icon">
+                                    <p class="m-0 pt-2">PHP</p>
                                 </div>
                                 <div class="tech-card text-center">
                                     <img src="./assets/images/stack/expressjs.png" alt="ExpressJS" class="tech-icon">
@@ -122,6 +151,10 @@ function myStackFunction() {
                             <div class="tech-card text-center">
                                 <img src="./assets/images/stack/react.png" alt="ReactJS" class="tech-icon">
                                 <p class="m-0 pt-2">ReactJS</p>
+                            </div>
+                            <div class="tech-card text-center">
+                                <img src="./assets/images/stack/Nextjs.png" alt="Nextjs" class="tech-icon">
+                                <p class="m-0 pt-2">Nextjs</p>
                             </div>
                             <div class="tech-card text-center">
                                 <img src="./assets/images/stack/html5-c.png" alt="HTML" class="tech-icon">
@@ -559,7 +592,7 @@ function contactFunction() {
 
 export function mainSection() {
     homeFunction()
-    aboutMeFunction()
+    myExperienceFunction()
     myStackFunction()
     myProjectsFunction()
     contactFunction()
